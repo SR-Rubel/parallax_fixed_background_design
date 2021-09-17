@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Tahoma;
+    font-size: 16px;
+    line-height: 24px;
+}
+h2{
+    font-size: 32px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.caption{
+    width: 30%;
+}
+
+section{
+    position: relative;
+}
+.caption{
+    position:absolute;
+}
+
+#intro .caption{
+    color:#ffff;
+    top: 150px;
+    right: 100px;
+    padding: 105px;
+    border-radius: 69px;
+    border: 3px solid aqua;
+}
+#html .caption{
+
+    color:#ffff;
+    top: 150px;
+    right: 100px;
+    padding: 105px;
+    border-radius: 69px;
+    border: 3px solid #de8a22;
+}
+
+#css .caption{
+    color:#ffff;
+    bottom: 100px;
+    right: 250px;
+    padding: 105px;
+    border-radius: 69px;
+    border: 3px solid cyan;
+}
+#bootstrap .caption{
+    color:#ffff;
+    bottom:100px;
+    right: 150px;
+    padding: 105px;
+    border-radius: 69px;
+    border: 3px solid rgb(186, 3, 241);
+}
+#javascript .caption{
+    padding: 105px;
+    border-radius: 69px;
+    color: #ffff;
+    border: 3px solid yellow;
+    top: 100px;
+    left: 200px;
+}
+#intro{
+    background: url(img/web-dev.jpg) no-repeat fixed;
+    background-size: cover;
+    height: 770px;
+}
+#html{
+    background: url(img/html.jpg) no-repeat fixed;
+    background-size: cover;
+    height: 770px;
+}
+#css{
+    background: url(img/css.jpg) no-repeat fixed;
+    background-size: cover;
+    height: 770px;
+}
+#bootstrap{
+    background: url(img/bootstrap.jpg) no-repeat fixed;
+    background-size: cover;
+    height: 770px;
+}
+#javascript{
+    background: url(img/js.jpg) no-repeat fixed;
+    background-size: cover;
+    height: 770px;
+}
+.overlay{
+    background:rgba(0,0,0,0.6);
+    height: 770px;
+}
+
+.home{
+    background:rgba(0,0,0,0.5);
+    height: 770px;
+}
+
+.scroll{
+    position: absolute;
+    bottom: 100px;
+    left: 200px;
+}
+.scroll h4{
+    color:#ffff;
+    margin-left:-55px
+}
+.scroll span{
+    color:#ffff;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: -10px;
+    border-bottom: 2px solid #ffff;
+    border-right: 2px solid #ffff;
+    transform: rotate(45deg);
+    animation: animate 2s infinite;
+}
+.scroll span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.scroll span:nth-child(3){
+    animation-delay: -0.4s;
+}
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+.menu{
+    position: absolute;
+    left:50px;
+    top:50px;
+
+}
+
+button{
+    font-family:georgia;
+    font-size: 20px;
+    background: none;
+    color:#ccc;
+    width: 150px;
+    height:50px;
+    border: 1px solid rgb(19, 209, 209);
+    border-radius: 25px;
+}
+button:hover{
+    background:rgba(160, 80, 147, 0.404);
+    outline: none;
+    transform:scale(1.04);
+    transition: .6s;
+}
+html{
+    scroll-behavior:smooth;
+}
+.html_menu{
+    position: absolute;
+    top:200px;
+    left: 100px;
+}
+.html_menu button{
+    margin-bottom: 20px;
+    width:400px;
+}
